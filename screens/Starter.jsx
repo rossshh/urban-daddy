@@ -1,7 +1,8 @@
 import React from 'react'
+import { Dimensions } from 'react-native';
 import { View, StyleSheet,Text, Image, StatusBar, Pressable } from 'react-native'
 
-
+const width = Dimensions.get("window").width
 const Starter=({navigation})=>{
     return (
         <View style={styles.mainContainer}>
@@ -11,7 +12,7 @@ const Starter=({navigation})=>{
             </View>
             <Text style={styles.mainHeader}>WELCOME BACK !</Text>
             <View style={styles.buttonContainer}>
-                <Pressable style={styles.startButton} onPress={()=>{navigation.navigate('login')}}>
+                <Pressable style={styles.startButton} onPress={()=>{navigation.navigate('Login')}}>
                     <Text style={styles.buttonText}>Get Started ➤</Text>
                 </Pressable>
             </View>
@@ -21,9 +22,10 @@ const Starter=({navigation})=>{
     const styles=StyleSheet.create({
         mainContainer:{
             marginTop:StatusBar.currentHeight,
-            marginTop: 70,
             paddingHorizontal: 30,
             backgroundColor: "#fff",
+            height:'100%',
+            width:'width'
         },
         mainHeader:{
             fontSize: 70,

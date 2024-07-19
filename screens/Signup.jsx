@@ -71,7 +71,7 @@ const Signup = ({ navigation }) => {
         <Text style={styles.buttonText}>Sign Up</Text>
       </Pressable>
       <Text style={styles.OrText}>Or, Already Have an Account ?</Text>
-      <Pressable style={styles.footerLink}><Text style={styles.footerLinkText} onPress={()=>{navigation.navigate('login')
+      <Pressable style={styles.footerLink}><Text style={styles.footerLinkText} onPress={()=>{navigation.navigate('Login')
       }}>Sign In {">"}</Text></Pressable>
     </View>
   );
@@ -130,6 +130,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 23,
+    color:'white'
   },
   OrText:{
     fontSize: 20,

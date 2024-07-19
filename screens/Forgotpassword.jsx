@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, TextInput, StatusBar, Pressable, TouchableHighlight } from "react-native";
+import { Text, View, StyleSheet, Image, TextInput, StatusBar, Pressable, TouchableHighlight } from "react-native";
 import Login from "./Login";
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -8,6 +8,11 @@ import { NavigationContainer } from '@react-navigation/native';
 const Forgotpassword = ({navigation}) => {
   return (
     <View style={styles.mainContainer}>
+      <Text style={styles.forgotHeader}>
+        Reset Your Password
+      </Text>
+      <Image style={styles.forgetImage}
+        source={require('../assets/images/forget.png')} />
       <Text style={styles.description}>
         You can reach us anytime via any@rosssh.com
       </Text>
@@ -39,9 +44,9 @@ const styles = StyleSheet.create({
   mainContainer: {
     height: "100%",
     marginTop: StatusBar.currentHeight,
-    marginTop: 100,
     paddingHorizontal:10,
     paddingVertical:6,
+    backgroundColor:'white'
   },
   inputContainer: {
     marginTop: 20,
@@ -73,6 +78,16 @@ const styles = StyleSheet.create({
   description:{
     fontSize:20,
     marginBottom:30,
+  },
+  forgotHeader:{
+    fontSize:40,
+    marginBottom:30,
+    marginLeft:30
+  },  
+  forgetImage:{
+    width:'100%',
+    height:'30%',
+    borderRadius:30
   }
 });
 

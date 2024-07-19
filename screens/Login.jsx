@@ -66,8 +66,8 @@ const Login = ({ navigation }) => {
         <FontAwesome name=''/>
       </View> */}
       <View style={styles.footerLink}>
-        <Pressable style={styles.forgotPassword} onPress={()=>navigation.navigate("forgotpassword")}><Text style={styles.footerLinkText}>Forgot Password ?</Text></Pressable>
-        <Pressable style={styles.register} onPress={()=>navigation.navigate("signup")}>
+        <Pressable style={styles.forgotPassword} onPress={()=>navigation.navigate("Forgotpassword")}><Text style={styles.footerLinkText}>Forgot Password ?</Text></Pressable>
+        <Pressable style={styles.register} onPress={()=>navigation.navigate("Signup")}>
           <Text style={styles.footerLinkText}>Register ?</Text>
         </Pressable>
       </View>
@@ -128,6 +128,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 23,
+    color:'white',
   },
   OrText:{
     fontSize: 20,
@@ -152,5 +153,4 @@ const styles = StyleSheet.create({
 });
 
 export default Login;
-
 

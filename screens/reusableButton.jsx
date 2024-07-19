@@ -5,7 +5,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const reusableButton = () => {
   return (
-    <View style={{margin:30}}>
+    <View style={{margin:40}}>
         <Text style={{
             backgroundColor: 'yellow',
             textAlign: 'center',
