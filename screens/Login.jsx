@@ -54,17 +54,11 @@ const Login = ({ navigation }) => {
       <Pressable
         style={[
           styles.buttonStyle,
-          { backgroundColor: agree ? "#4660EB" : "grey" }]} onPress={()=>{navigation.navigate('home')}}
+          { backgroundColor: agree ? "#4660EB" : "grey" }]} onPress={()=>{navigation.navigate('Splash')}}
         disabled={!agree}>
         <Text style={styles.buttonText}>Login</Text>
       </Pressable>
       <Text style={styles.OrText}>Or</Text>
-      {/* <View style={styles.iconContainer}>
-        <FontAwesome name='google' />
-        <FontAwesome name='mobile'/>
-        <FontAwesome name='facebook'/>
-        <FontAwesome name=''/>
-      </View> */}
       <View style={styles.footerLink}>
         <Pressable style={styles.forgotPassword} onPress={()=>navigation.navigate("Forgotpassword")}><Text style={styles.footerLinkText}>Forgot Password ?</Text></Pressable>
         <Pressable style={styles.register} onPress={()=>navigation.navigate("Signup")}>
